@@ -1,0 +1,647 @@
+/* ==========================================================================
+   Fonts for this project
+   ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+	font-family: 'Open Sans', sans-serif;
+    color: #838383;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   main styles
+   ========================================================================== */
+html,body{
+	height: 100%;
+}
+body{
+	position: relative;
+}
+
+.outwrap{
+	width: 490px;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+}
+.card{
+	width: 100%;
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	box-shadow: 0 2px 0 #f4f4f4;
+	-webkit-box-shadow: 0 2px 0 #f4f4f4;
+	-moz-box-shadow: 0 2px 0 #f4f4f4;
+	-ms-box-shadow: 0 2px 0 #f4f4f4;
+	-o-box-shadow: 0 2px 0 #f4f4f4;
+	margin-bottom: 24px;
+	position: relative;
+}
+.cradinnr{
+	padding: 28px 38px;
+}
+#progressbr{
+	height: 20px;
+	border-bottom: 1px solid #dcdcdc;
+	box-shadow: inset 0 5px 15px rgba(192, 190, 190, 0.19);
+	-webkit-box-shadow: inset 0 5px 15px rgba(192, 190, 190, 0.19);
+	-moz-box-shadow: inset 0 5px 15px rgba(192, 190, 190, 0.19);
+	-ms-box-shadow: inset 0 5px 15px rgba(192, 190, 190, 0.19);
+	-o-box-shadow: inset 0 5px 15px rgba(192, 190, 190, 0.19);
+	position: relative;
+	overflow: hidden;
+}
+#progress{
+	width: 0%;
+	height: 20px;
+	display: block;
+	background: #ef5f3c;
+}
+#tooltip.active{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	-o-transform: translateY(0px);
+	transition: 0.3s ease-in-out all;
+	-webkit-transition: 0.3s ease-in-out all;
+	-moz-transition: 0.3s ease-in-out all;
+	-ms-transition: 0.3s ease-in-out all;
+	-o-transition: 0.3s ease-in-out all;
+}
+#tooltip{
+	background: #424242;
+	padding: 0 50px;
+	line-height: 76px;
+	width: 100%;
+	height: 80px;
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	position: absolute;
+	z-index: 1;
+	top: -100px;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(21px);
+	-webkit-transform: translateY(21px);
+	-moz-transform: translateY(21px);
+	-ms-transform: translateY(21px);
+	-o-transform: translateY(21px);
+    transform-origin: right bottom;
+    -webkit-transform-origin: right bottom;
+    -moz-transform-origin: right bottom;
+    -ms-transform-origin: right bottom;
+    -o-transform-origin: right bottom;
+    transition: 0.3s ease-in-out all;
+	-webkit-transition: 0.3s ease-in-out all;
+	-moz-transition: 0.3s ease-in-out all;
+	-ms-transition: 0.3s ease-in-out all;
+	-o-transition: 0.3s ease-in-out all;
+}
+#tooltip:after{
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 11px 0 11px;
+	border-color: #424242 transparent transparent transparent;
+	right: 50px;
+    position: absolute;
+}
+#tooltip strong{
+	color: #fff;
+}
+strong.colred{
+	color: #ef5f3c;
+}
+strong{
+	color: #828282;
+}
+.card p{
+	margin-bottom: 28px;
+	margin-top: 0px;
+	font-size: 22px;
+	line-height: 30px;
+}
+.card p.lstp{
+	margin-bottom: 22px;
+}
+.frmfldwrp .in-hlf:first-child{
+	float: left;
+}
+.frmfldwrp .in-hlf:last-child{
+	float: right;
+}
+.in-hlf{
+	width: 46%;
+}
+.field{
+	width: 100%;
+	border: 1px solid #e1e1e1;
+	line-height: 80px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	padding: 0 20px 0 40px;
+	outline: none;
+	font-weight: 700;
+	color: #424242;
+	font-size: 30px;
+	position: relative;
+}
+.fieldwrap{
+	position: relative;
+}
+.fieldwrap:after{
+	content: '$';
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+    left: 16px;
+    color: #828282;
+    font-weight: 700;
+}
+.field:focus{
+	border: 1px solid #C2D7F1;
+	box-shadow: 0 0 10px #C2D7F1;
+	-webkit-box-shadow: 0 0 10px #C2D7F1;
+	-moz-box-shadow: 0 0 10px #C2D7F1;
+	-ms-box-shadow: 0 0 10px #C2D7F1;
+	-o-box-shadow: 0 0 10px #C2D7F1;
+}
+.givenow{
+	background: #1cbc2c;
+	line-height: 76px;
+	display: inline-block;
+	border: 1px solid #22ae2f;
+	border-bottom: 3px solid #22ae2f;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	transition: 0.3s ease-in-out all;
+	-webkit-transition: 0.3s ease-in-out all;
+	-moz-transition: 0.3s ease-in-out all;
+	-ms-transition: 0.3s ease-in-out all;
+	-o-transition: 0.3s ease-in-out all;
+	outline: none;
+	color: #fff;
+	font-size: 23px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.givenow:hover{
+	background: #22ae2f;
+	transition: 0.3s ease-in-out all;
+	-webkit-transition: 0.3s ease-in-out all;
+	-moz-transition: 0.3s ease-in-out all;
+	-ms-transition: 0.3s ease-in-out all;
+	-o-transition: 0.3s ease-in-out all;
+}
+#statustext{
+	display: inline-block;
+    color: #28a3d5;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.otherbtngrp .obtn{
+	width: 47%;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	background: #fafafa;
+	border: 1px solid #dcdcdc;
+	border-bottom: 3px solid #dcdcdc;
+	color: #777777;
+	font-weight: 700;
+    font-size: 20px;
+	line-height: 62px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	transition: 0.3s ease-in-out all;
+	-webkit-transition: 0.3s ease-in-out all;
+	-moz-transition: 0.3s ease-in-out all;
+	-ms-transition: 0.3s ease-in-out all;
+	-o-transition: 0.3s ease-in-out all;
+}
+.otherbtngrp .obtn:first-child{
+	float: left;
+}
+.otherbtngrp .obtn:last-child{
+	float: right;
+}
+.otherbtngrp .obtn:hover{
+	background: #22ae2f;
+	border-color: #269A31;
+	color: #fff;
+	transition: 0.3s ease-in-out all;
+	-webkit-transition: 0.3s ease-in-out all;
+	-moz-transition: 0.3s ease-in-out all;
+	-ms-transition: 0.3s ease-in-out all;
+	-o-transition: 0.3s ease-in-out all;
+}
+.shareoverly{
+	width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    z-index: 2;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out all;
+    -webkit-transition: 0.3s ease-in-out all;
+    -moz-transition: 0.3s ease-in-out all;
+    -ms-transition: 0.3s ease-in-out all;
+    -o-transition: 0.3s ease-in-out all;
+}
+.shareoverly.active{
+	transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease-in-out all;
+    -webkit-transition: 0.3s ease-in-out all;
+    -moz-transition: 0.3s ease-in-out all;
+    -ms-transition: 0.3s ease-in-out all;
+    -o-transition: 0.3s ease-in-out all;
+}
+.shareoverly ul{
+	width: 300px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.shareoverly ul li{
+	display: inline-block;
+	width: 31.33%;
+}
+.shareoverly ul li a{
+	color: #fff;
+	display: inline-block;
+	width: 100%;
+	line-height: 50px;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+}
+.shareoverly ul li a:hover{
+	opacity: 0.8;
+}
+.shareoverly ul li a.fb{
+	background: #3B5998;
+}
+.shareoverly ul li a.gp{
+	background: #d34836;
+}
+.shareoverly ul li a.tw{
+	background: #00aced;
+}
+#escapeshare{
+	position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 30px;
+    color: #fff;
+}
+.k-loading-mask{
+	display: none;
+	position: absolute;
+    z-index: 7;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.k-loading-mask i{
+	color: #383838;
+    font-size: 80px;
+}
+.savelater .card:before{
+	content: '';
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.happenedsltr.savelater .card:before{
+	content: none;
+}
+.outwrap.savelater.happenedsltr {
+    text-align: center;
+    background: #eee;
+    height: 350px;
+}
+.outwrap.savelater.happenedsltr .inrwrapsuc{
+	position: absolute;
+	width: 100%;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.succtick i{
+	color: #1CA52E;
+    font-size: 65px;
+}
+.inrwrapsuc h3{
+	margin: 10px;
+    font-size: 35px;
+    color: rgb(28, 165, 46);
+    text-shadow: 1px 2px 0 rgba(0,0,0,0.45);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+

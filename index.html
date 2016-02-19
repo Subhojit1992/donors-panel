@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>CSS Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/plugin.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="scripts/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+
+        <div class="outwrap">
+            <div id="tooltip"></div>
+            <div class="card">
+                <div class="k-loading-mask"><i class="fa fa-spinner fa-pulse"></i></div>
+                <div class="shareoverly">
+                    <a href="javascript:void(0);" id="escapeshare"><i class="fa fa-times"></i></a>
+                    <ul>
+                        <li><a href="javascript:void(0);" class="fb hint--bottom hint--info" data-hint="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="javascript:void(0);" class="gp hint--bottom hint--info" data-hint="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="javascript:void(0);" class="tw hint--bottom hint--info" data-hint="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div id="progressbr">
+                    <span id="progress"></span>
+                </div>
+                <div class="cradinnr">
+                    <p><strong class="colred">Only 3 days left</strong> to found this project</p>
+                    <p class="lstp">Join the <strong>42</strong> other donors who have alreay supported this project. Every dollar helps</p>
+                    <form>
+                        <div class="frmfldwrp cf">
+                            <div class="fieldwrap in-hlf">
+                                <input type="text" name="dollar-value" class="field" id="valuefield">
+                            </div>
+                            <button type="submit" class="givenow in-hlf" class="givesbmt" id="gvnw">Give Now</button>
+                        </div>
+                    </form>
+                    <span id="statustext"></span>
+                </div>
+            </div>
+            <div class="otherbtngrp cf">
+                <a href="javascript:void(0);" class="obtn" id="svltr">Save for later</a>
+                <a href="javascript:void(0);" class="obtn" id="tlfrnd">Tell a frineds</a>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="scripts/vendor/plugins.js"></script>
+        <script src="scripts/script.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <!--<script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
+    </body>
+</html>

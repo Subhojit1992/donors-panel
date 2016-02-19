@@ -1,0 +1,36 @@
+@media all and (max-width : 767px){
+	html, body { height: auto; }
+	body { padding: 100px 50px; }
+	.outwrap { position: relative; top: auto; left: auto; transform: none; -webkit-transform: none; -moz-transform: none; -ms-transform: none; -o-transform: none; }
+}
+
+@media all and (max-width : 600px){
+	.outwrap { width: 100%; }
+	.card p { margin-bottom: 15px; margin-top: 0px; font-size: 15px; line-height: 21px; }
+	#tooltip { padding: 0 30px; line-height: 66px; height: 70px; font-size: 15px; }
+	#tooltip.active { transform: translateY(10px); -webkit-transform: translateY(10px); -moz-transform: translateY(10px); -ms-transform: translateY(10px); -o-transform: translateY(10px); }
+	.in-hlf { width: 100%; margin-bottom: 20px; }
+	.frmfldwrp .in-hlf:first-child, .frmfldwrp .in-hlf:last-child { float: none; }
+	.frmfldwrp .in-hlf:last-child { margin-bottom: 0; }
+}
+
+@media all and (max-width : 480px){
+	body { padding: 100px 10px; }
+	.cradinnr { padding: 18px 18px; }
+	.otherbtngrp .obtn { font-size: 16px; }
+	#tooltip { padding: 0 20px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
